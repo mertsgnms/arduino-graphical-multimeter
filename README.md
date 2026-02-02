@@ -1,4 +1,4 @@
-# arduino-graphical-multimeter
+# Arduino Based Graphical Multimeter
 A graphical multimeter design that measures AC/DC voltage and current values and displays them as a graph.
 ## What it does
 This multimeter design uses a rotary switch to switch between measurement modes to measure AC/DC current and voltage. Measurement values are then scaled and displayed on the OLED screen.
