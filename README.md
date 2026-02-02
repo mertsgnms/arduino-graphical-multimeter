@@ -1,7 +1,7 @@
 # arduino-graphical-multimeter
 A multimeter design that is able to measure ACV DCV and current and display it on an OLED screen as a graph.
 ## What it does
-This multimeter design uses a rotary switch to switch between measurement modes to measure AC/DC current and voltage. Measurement values are then scaled and displayed on the OLED screen. 
+This multimeter design uses a rotary switch to switch between measurement modes to measure AC/DC current and voltage. Measurement values are then scaled and displayed on the OLED screen.
 ## Power System
 The system is powered by a 3.7 Li-ion battery that is connected to TP4056 charging module to protect the system against reverse polarity and overcharge as well as providing a way to recharge the battery. The output of TP4056 is connected to the MT3608 step-up module which increases the voltage to 5V. The output is then connected to Arduino Nano’s 5V pin through a switch to power the system.
 ## Rotary Switch System
@@ -17,5 +17,5 @@ The system is controlled by an Arduino Nano. The microcontroller’s purpose is 
 D6 pin is set to HIGH logic level and connected to the B pole of the rotary switch through a 1kΩ resistor. D8 and D4 pins are digital inputs and are connected to throws 4 and 5 on the rotary switch. D8 and D4 are wired to the GND through a 10kΩ resistor in order to avoid floating values when the connection is open. A1 and A7 are wired to the outputs of the DCV and ACV measurement circuits. A4 and A5 are I2C pins and are connected to the SDA and SCL pins of the INA219. A4 and A5 pins are also connected to the SDA and SCL pins of the GME128128-01-IIC 1.5” OLED screen through a level shifter. Arduino Nano is powered through the 5V pin by the power system of the circuit.
 ## Display System
 The display system consists of a GME128128-01-IIC 1.5’’ OLED display and a logic level shifter. The display’s SDA and SCL connected to the I2C pins (A4 and A5) through a logic level shifter to avoid harming the display. The screen is powered by the 3.3V pin on the Arduino Nano.
-### Status: WIP
+### Status: WIP / Working prototype
 #### Author: Mert SIĞINMIŞ (GitHub: mertsgnms).
