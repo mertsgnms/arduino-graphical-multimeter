@@ -1,2 +1,3 @@
 # arduino-graphical-multimeter
-A multimeter design that is able to measure ACV DCV and current and display it on an OLED screen as a graph
+A multimeter design that is able to measure ACV DCV and current and display it on an OLED screen as a graph.\
+Author: Mert SIĞINMIŞ (GitHub: mertsgnms).
